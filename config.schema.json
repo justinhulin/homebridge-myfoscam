@@ -137,7 +137,6 @@
             "type": "integer",
             "placeholder": 2,
             "minimum": 0,
-            "maximum": 4,
             "description": "Foscam Motion sensor sensitivity from 0 (lowest) to 4 (high)."
           },
           "triggerInterval": {
@@ -145,7 +144,6 @@
             "type": "integer",
             "placeholder": 5,
             "minimum": 5,
-            "maximum": 15,
             "description": "Time in s (5-15) of which Foscam motion sensor can be retriggered."
           },
           "manufacturer": {
