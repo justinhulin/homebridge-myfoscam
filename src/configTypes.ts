@@ -14,6 +14,17 @@ export type FfmpegPlatformConfig = {
 
 export type CameraConfig = {
   name: string;
+  username: string;
+  password: string;
+  host: string;
+  port: number;
+  stay: number;
+  away: number;
+  night: number;
+  armPreset: string;
+  disarmPreset: string;
+  sensitivity: number;
+  triggerInterval: number;
   manufacturer: string;
   model: string;
   serialNumber: string;

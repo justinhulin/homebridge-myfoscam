@@ -75,19 +75,19 @@
           "username": {
             "title": "username",
             "type": "string",
-            "required": true,
+            "required": false,
             "description": "Set the camera name for display in the Home app."
           },
           "password": {
             "title": "password",
             "type": "string",
-            "required": true,
+            "required": false,
             "description": "Set the camera name for display in the Home app."
           },
           "host": {
             "title": "host",
             "type": "string",
-            "required": true,
+            "required": false,
             "description": "Set the camera name for display in the Home app."
           },
           "port": {
@@ -95,7 +95,7 @@
             "type": "integer",
             "placeholder": 88,
             "minimum": 1,
-            "required": true,
+            "required": false,
             "description": "Set the camera name for display in the Home app."
           },
           "stay": {
@@ -132,7 +132,7 @@
             "description": "Set the manufacturer name for display in the Home app."
           },
           "sensitivity": {
-            "title": "Sensitivity",
+            "title": "sensitivity",
             "type": "integer",
             "placeholder": 2,
             "minimum": 1,
