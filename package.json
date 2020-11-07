@@ -1,16 +1,16 @@
 {
-  "private": true,
-  "displayName": "Plugin Name",
-  "name": "homebridge-plugin-name",
-  "version": "1.0.0",
+  "private": false,
+  "displayName": "MyFoscam",
+  "name": "homebridge-myfoscam",
+  "version": "1.0.1",
   "description": "A short description about what your plugin does.",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/USERNAME/GITHUB_PROJECT_NAME.git"
+    "url": "git://github.com/justinhulin/homebridge-myfoscam.git"
   },
   "bugs": {
-    "url": "https://github.com/USERNAME/GITHUB_PROJECT_NAME/issues"
+    "url": "https://github.com/justinhulin/homebridge-myfoscam/issues"
   },
   "engines": {
     "node": ">=10.17.0",
@@ -18,15 +18,34 @@
   },
   "main": "dist/index.js",
   "scripts": {
-    "lint": "eslint src/**.ts --max-warnings=0",
-    "watch": "npm run build && npm link && nodemon",
-    "build": "rimraf ./dist && tsc",
-    "prepublishOnly": "npm run lint && npm run build"
+    "clean": "rimraf ./dist ./coverage",
+    "build": "rimraf ./dist ./coverage && tsc",
+    "format": "markdownlint --fix *.md",
+    "lint": "eslint src/*.ts --fix",
+    "lint-check": "eslint src/*.ts",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run lint-check",
+    "postpublish": "npm run clean",
+    "watch": "npm run clean && tsc --watch"
   },
   "keywords": [
     "homebridge-plugin"
   ],
-  "dependencies": {},
+  "files": [
+    "CHANGELOG.md",
+    "config.schema.json",
+    "dist/**/*",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "foscam-client": "^0.5.0",
+    "ffmpeg-for-homebridge": "^0.0.9",
+    "get-port": "^5.1.1",
+    "mqtt": "^4.2.1",
+    "systeminformation": "^4.27.0"
+  },
   "devDependencies": {
     "@types/node": "^14.14.2",
     "@typescript-eslint/eslint-plugin": "^4.5.0",
