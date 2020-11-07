@@ -76,19 +76,20 @@
             "title": "username",
             "type": "string",
             "required": false,
-            "description": "Set the camera name for display in the Home app."
+            "description": "Set Foscam Usernam."
           },
           "password": {
             "title": "password",
             "type": "string",
             "required": false,
-            "description": "Set the camera name for display in the Home app."
+            "description": "Set Foscam Password."
           },
           "host": {
             "title": "host",
             "type": "string",
             "required": false,
-            "description": "Set the camera name for display in the Home app."
+            "placeholder": "192.168.xx.x",
+            "description": "Set Foscam camera ip."
           },
           "port": {
             "title": "port",
@@ -96,54 +97,56 @@
             "placeholder": 88,
             "minimum": 1,
             "required": false,
-            "description": "Set the camera name for display in the Home app."
+            "description": "Set Foscam port."
           },
           "stay": {
             "title": "stay",
             "type": "integer",
             "placeholder": 13,
-            "minimum": 1,
-            "description": "Set the camera name for display in the Home app."
+            "minimum": 0,
+            "description": "Set arm stay bits. Bits to set motion, sound, and position. 0 means do nothing."
           },
           "away": {
             "title": "away",
             "type": "integer",
             "placeholder": 15,
-            "minimum": 1,
-            "description": "Set the camera name for display in the Home app."
+            "minimum": 0,
+            "description": "Set arm away bits. Bits to set motion, sound, and position. 0 means do nothing."
           },
           "night": {
             "title": "night",
             "type": "integer",
             "placeholder": 14,
-            "minimum": 1,
-            "description": "Set the camera name for display in the Home app."
+            "minimum": 0,
+            "description": "Set night stay bits. Bits to set motion, sound, and position. 0 means do nothing."
           },
           "armPreset": {
             "name": "armPreset",
             "type": "string",
             "placeholder": "mainview",
-            "description": "Set the manufacturer name for display in the Home app."
+            "description": "Set foscam preset for when armed."
           },
           "disarmPreset": {
             "name": "disarmPreset",
             "type": "string",
             "placeholder": "door",
-            "description": "Set the manufacturer name for display in the Home app."
+            "description": "Set foscam preset for when disarmed."
           },
           "sensitivity": {
             "title": "sensitivity",
             "type": "integer",
             "placeholder": 2,
-            "minimum": 1,
-            "description": "Set the camera name for display in the Home app."
+            "minimum": 0,
+            "maximum": 4,
+            "description": "Foscam Motion sensor sensitivity from 0 (lowest) to 4 (high)."
           },
           "triggerInterval": {
             "title": "triggerInterval",
             "type": "integer",
             "placeholder": 5,
-            "minimum": 1,
-            "description": "Set the camera name for display in the Home app."
+            "minimum": 5,
+            "maximum": 15,
+            "description": "Time in s (5-15) of which Foscam motion sensor can be retriggered."
           },
           "manufacturer": {
             "name": "Manufacturer",
