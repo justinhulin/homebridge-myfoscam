@@ -66,6 +66,12 @@
         "title": "Cameras",
         "type": "object",
         "properties": {
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "required": true,
+            "description": "Set the camera name for display in the Home app."
+          },
           "username": {
             "title": "username",
             "type": "string",
