@@ -7,7 +7,7 @@
       "title": "Name",
       "type": "string",
       "placeholder": "Camera Name",
-      "default": "Camera FFmpeg"
+      "default": "Foscam"
     },
     "videoProcessor": {
       "title": "Video Processor",
@@ -148,7 +148,7 @@
           "model": {
             "name": "Model",
             "type": "string",
-            "placeholder": "Camera FFmpeg",
+            "placeholder": "Foscam",
             "description": "Set the model for display in the Home app."
           },
           "serialNumber": {

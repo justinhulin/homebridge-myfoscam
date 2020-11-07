@@ -91,7 +91,7 @@ class FfmpegPlatform implements DynamicPlatformPlugin {
     const accInfo = accessory.getService(hap.Service.AccessoryInformation);
     if (accInfo) {
       accInfo.setCharacteristic(hap.Characteristic.Manufacturer, cameraConfig.manufacturer || 'Homebridge');
-      accInfo.setCharacteristic(hap.Characteristic.Model, cameraConfig.model || 'Camera FFmpeg');
+      accInfo.setCharacteristic(hap.Characteristic.Model, cameraConfig.model || 'Foscam');
       accInfo.setCharacteristic(hap.Characteristic.SerialNumber, cameraConfig.serialNumber || 'SerialNumber');
       accInfo.setCharacteristic(hap.Characteristic.FirmwareRevision, cameraConfig.firmwareRevision || version);
     }
