@@ -40,6 +40,7 @@
     "README.md"
   ],
   "dependencies": {
+    "foscamhd-client": "^1.4.0",
     "foscam-client": "^0.5.0",
     "ffmpeg-for-homebridge": "^0.0.9",
     "get-port": "^5.1.1",

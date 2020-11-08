@@ -20,6 +20,7 @@ import { CameraConfig, FfmpegPlatformConfig } from './configTypes';
 import { Logger } from './logger';
 import { StreamingDelegate } from './streamingDelegate';
 const version = require('../package.json').version; // eslint-disable-line @typescript-eslint/no-var-requires
+// const Foscam = require('foscam-client');
 
 let hap: HAP;
 let Accessory: typeof PlatformAccessory;
