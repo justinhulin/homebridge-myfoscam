@@ -31,7 +31,7 @@ let hap: HAP;
 let Accessory: typeof PlatformAccessory;
 
 
-const PLUGIN_NAME = 'homebridge-myfoscam';
+const PLUGIN_NAME = 'homebridge-customfoscam';
 const PLATFORM_NAME = 'myfoscam';
 
 type AutomationReturn = {
