@@ -19,11 +19,17 @@ import url from 'url';
 import { CameraConfig, FfmpegPlatformConfig } from './configTypes';
 import { Logger } from './logger';
 import { StreamingDelegate } from './streamingDelegate';
+// import FoscamHdClient from 'foscamhd-client';
 const version = require('../package.json').version; // eslint-disable-line @typescript-eslint/no-var-requires
 // const Foscam = require('foscam-client');
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+// const FoscamHdClient = require('foscamhd-client');
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+// const Foscam = require('foscam-client')
 
 let hap: HAP;
 let Accessory: typeof PlatformAccessory;
+
 
 const PLUGIN_NAME = 'homebridge-myfoscam';
 const PLATFORM_NAME = 'myfoscam';
@@ -47,7 +53,8 @@ class FfmpegPlatform implements DynamicPlatformPlugin {
     this.log = new Logger(log);
     this.api = api;
     this.config = config as unknown as FfmpegPlatformConfig;
-
+    
+    
     if (this.config.cameras) {
       this.config.cameras.forEach((cameraConfig: CameraConfig) => {
         let error = false;
