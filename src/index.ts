@@ -21,7 +21,8 @@ import { Logger } from './logger';
 import { StreamingDelegate } from './streamingDelegate';
 // import FoscamHdClient from 'foscamhd-client';
 const version = require('../package.json').version; // eslint-disable-line @typescript-eslint/no-var-requires
-// const Foscam = require('foscam-client');
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const Foscam = require('foscam-client');
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 // const FoscamHdClient = require('foscamhd-client');
 // eslint-disable-next-line @typescript-eslint/no-var-requires
